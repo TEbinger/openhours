@@ -4,7 +4,7 @@ opening_hours = {
 }
 
 minetest.register_chatcommand("openinghours", {
- minetest.chat_send_player(name, "Öffnungszeiten Mo - Fr ".. opening_hours.weekday[1].. "bis" opening_hours.weekday[2] .." Uhr, Sa./So. ".. opening_hours.weekend[1].." bis ".. opening_hours.weekend[2].."Uhr. " "..opening_hours.weekend )})       
+ minetest.chat_send_player(name, "Öffnungszeiten Mo - Fr ".. opening_hours.weekday[1].. "bis" opening_hours.weekday[2] .." Uhr, Sa./So. ".. opening_hours.weekend[1].." bis ".. opening_hours.weekend[2].."Uhr.")})
 
 minetest.register_on_joinplayer(function(player)
     if minetest.check_player_privs(player:get_player_name(), {server = true}) then return end
